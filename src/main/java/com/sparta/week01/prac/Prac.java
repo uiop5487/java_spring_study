@@ -1,5 +1,8 @@
 package com.sparta.week01.prac;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Prac {
 
     public static void main(String[] args) {
@@ -18,5 +21,28 @@ public class Prac {
         // 100억 보다 큰 숫자
         Long bigNum = 10000000000L;
         System.out.println(bigNum);
+
+        int myAge = 20;
+        // 불리언
+        boolean isAdult = myAge > 20;
+        boolean isKid = myAge <= 20;
+        System.out.println(isAdult);
+        System.out.println(isKid);
+        System.out.println(myAge == 20);
+        System.out.println(myAge != 20);
+
+        // 배열
+        List<String> newList = new ArrayList<>();
+        String course1 = "코스1";
+        String course2 = "코스2";
+        newList.add(course1);
+        newList.add(course2);
+        System.out.println(newList);
+        System.out.println(newList.get(1));
+        List<String> newList2 = new ArrayList<>();
+        newList2.add(course1);
+        newList2.addAll(newList);
+        System.out.println(newList2);
+        newList2.remove(1);
     }
 }
